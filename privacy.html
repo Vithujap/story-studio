@@ -8,65 +8,145 @@
  :root{color-scheme:light dark}
  body{max-width:40rem;margin:0 auto;padding:3rem 1.25rem;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
  h1{font-size:1.6rem;margin-bottom:.25rem} h2{font-size:1.1rem;margin-top:2rem}
- .sub{opacity:.7;margin-top:0} a{color:#0a7} ul{padding-left:1.1rem}
+ .sub{opacity:.7;margin-top:0} a{color:#0a7} ul{padding-left:1.1rem} li{margin:.3rem 0}
  footer{margin-top:3rem;font-size:.9rem;opacity:.7}
 </style>
 </head>
 <body>
 <h1>Privacy policy</h1>
-<p>This covers Story Studio, my personal tool that runs on my own computer. Last updated 31 October 2026.</p>
+<p class="sub">Last updated 2 November 2026</p>
 
-<h2>The short version</h2>
-<p>Story Studio has no servers and no other users. It collects nothing about anyone, shares nothing with
-anyone, and keeps everything on my own computer. It only connects to accounts I own.</p>
+<p>Story Studio is a desktop app for publishing videos to YouTube, TikTok, Instagram and Facebook from one place.
+I made it to publish my own videos: it runs on my own computer and connects only to accounts I own. This policy
+covers every platform Story Studio connects to. It explains what information the app uses, why, where it is kept,
+for how long, and how to remove it. Connecting an account in Story Studio means agreeing to this policy.</p>
 
-<h2>What it can access on each account</h2>
-<p><b>YouTube (Google).</b> Permission to upload videos to my channel, to read basic information about my
-channel so it can show which channel is connected, and to manage the videos it uploaded, so it can add a
-thumbnail, a subtitle file and a comment to them.</p>
-<p><b>TikTok.</b> Permission to read my basic profile (my display name and account id) so it can show which
-account is connected, and to send videos to my TikTok drafts. Posting from the drafts is something I do myself
-in the TikTok app.</p>
-<p><b>Instagram and Facebook (Meta).</b> Permission to see the Facebook Pages I manage and the Instagram
-account linked to my Page, and to publish Reels to them.</p>
+<h2>In short</h2>
+<ul>
+  <li>Story Studio has no servers, no sign-up, no advertising and no analytics.</li>
+  <li>It connects to a platform only after you sign in and approve access on that platform's own page.</li>
+  <li>It uses a platform's information only to publish the videos you choose and to show which account is connected.</li>
+  <li>It does not sell or share any information.</li>
+  <li>You can remove its access at any time, and stored information is deleted on request within 7 days.</li>
+</ul>
 
-<h2>How that access is used</h2>
-<p>Only to do what I ask for: posting a video I made, with the title, description, thumbnail and schedule I
-reviewed before pressing the button. Nothing is posted without that confirmation. On YouTube it also adds a
-comment on my own Shorts linking to the full version of the same story.</p>
+<h2>Information it uses</h2>
+<p>From each connected platform:</p>
+<ul>
+  <li><b>Account details:</b> the account's name, username, profile picture, id and follower count, to show which
+  account is connected.</li>
+  <li><b>Access tokens:</b> issued by the platform when you sign in, so Story Studio can publish to that account.</li>
+  <li><b>Posting options:</b> what the platform allows the account to do, such as who can see a post, so the right
+  choices are offered.</li>
+  <li><b>Post results:</b> the ids, links and status the platform returns for each post, to show whether it went
+  through.</li>
+</ul>
+<p>From you: the videos, titles, captions, thumbnails, subtitles and settings you prepare for each post.</p>
 
-<h2>How it is stored</h2>
-<p>The access tokens each platform issues are stored in the macOS Keychain on my computer, which the operating
-system encrypts. They are never written to a file, never included in logs, and never leave my computer except
-in requests sent directly to that platform's own servers over HTTPS.</p>
-<p>Story Studio also keeps a local record of what it posted and when, so it never posts the same video twice.
-That record holds video titles and ids, and no passwords or tokens.</p>
+<h2>What it does on each platform</h2>
+<p><b>YouTube (Google).</b> Permissions: youtube.upload, youtube.readonly, and youtube.force-ssl, which is requested
+only when subtitle upload or the comment is on, and used only to add subtitle tracks and that comment. Story Studio uploads
+videos with the title, description, thumbnail and subtitles you set, publishes them now or at the time you choose,
+adds the comment you approved on the review sheet under your own Shorts, linking to the full video, reads the status of the videos it uploaded, and reads
+the channel's name, handle, id and subscriber count.</p>
+<p><b>TikTok.</b> Permissions: user.info.basic, video.upload, and video.publish, which is requested only when
+Story Studio posts for you. It reads your display name, profile picture and account id. Before a post, it reads
+your username and the options TikTok allows your account: who can see a post, whether comments, duets and
+stitches can be turned on, and the longest video accepted. It sends a video to your TikTok inbox to finish in the
+TikTok app, or posts it with the caption, visibility, interaction and commercial content settings you choose, and
+reads whether each post went through.</p>
+<p><b>Instagram and Facebook (Meta).</b> Permissions: pages_show_list, pages_read_engagement, pages_manage_posts,
+instagram_basic and instagram_content_publish. Story Studio reads the Facebook Pages you manage and the Instagram
+account linked to your Page (their names, ids, follower and post counts, and how many posts Instagram still allows
+today), publishes Reels to them, and reads whether each Reel went through.</p>
+
+<h2>How it is used</h2>
+<p>Only to do what you ask for in Story Studio: publish a video you selected and reviewed, with the title,
+caption, thumbnail, visibility and time you chose, show which account is connected, and show whether each post
+went through. Nothing is posted until you press Send. No information is used for advertising or profiling, and
+none is sold.</p>
+
+<h2>Where it is kept, and how it is protected</h2>
+<ul>
+  <li>Access tokens are kept in the macOS Keychain, which the operating system encrypts. They are never written to
+  a file or a log, and are sent only to the platform that issued them, over HTTPS.</li>
+  <li>Account details, the post record and its log are kept in files on my computer that only my user account can
+  read.</li>
+  <li>Nothing is kept anywhere else. Story Studio has no servers.</li>
+</ul>
+
+<h2>How long it is kept</h2>
+<ul>
+  <li><b>Access tokens:</b> until you sign out, or the platform ends them.</li>
+  <li><b>Account details:</b> refreshed from the platform each day Story Studio runs while the account is
+  connected, and deleted when you sign out. Details that cannot be refreshed for 30 days are deleted.</li>
+  <li><b>Post results:</b> the ids and links a platform returned are deleted once they are 30 days old, or when you
+  sign out of that platform, whichever comes first. Signing out also cancels a comment still waiting to be
+  posted.</li>
+  <li><b>Post record:</b> so the same video is never posted twice, Story Studio keeps a fingerprint of each video
+  file it sent, with the platform, the time, the result, and the title, caption and comment you wrote. This stays
+  until you delete it.</li>
+  <li><b>Channel lock:</b> if you choose to only ever upload to one YouTube channel, that channel's id is kept in
+  Story Studio's settings, so it never uploads anywhere else.</li>
+</ul>
 
 <h2>Sharing</h2>
-<p>None. No data from any platform is passed to any other person, company, server or service. There is no
-analytics, no tracking, no error reporting and no advertising.</p>
+<p>None. No information from any platform is sold, shared or passed to any other person, company, server or
+service. Story Studio shows no advertising, lets no third party serve content in it, and has no analytics and no
+error reporting.</p>
 
-<h2>Google API Services</h2>
-<p>Story Studio's use of information received from Google APIs adheres to the
+<h2>Cookies and device storage</h2>
+<p>This website sets no cookies and runs no tracking. Story Studio stores the information described above on the
+computer it runs on, and nowhere else.</p>
+
+<h2 id="deletion">Removing access and deleting data</h2>
+<p><b>In Story Studio:</b> on the Accounts page, press Sign out. This deletes the account's access tokens, asks
+the platform to revoke them, and deletes the account's details and the ids and links that platform returned.</p>
+<p><b>On each platform:</b></p>
+<ul>
+  <li>Google and YouTube: in addition to signing out in Story Studio, you can revoke its access to your data at any
+  time on the <a href="https://security.google.com/settings/security/permissions">Google security settings
+  page</a>.</li>
+  <li>TikTok: in the TikTok app, Settings and privacy, Security, Manage app permissions, then remove Story
+  Studio.</li>
+  <li>Instagram and Facebook: the apps and websites, or business integrations, section of each app's settings,
+  then remove Story Studio.</li>
+</ul>
+<p><b>By email:</b> to have any information Story Studio holds about you deleted, email the address below. It is
+deleted as soon as possible and within 7 days, and the deletion is confirmed by email.</p>
+<p>Deleting information in Story Studio does not delete anything on the platforms. Videos you posted stay there
+until you remove them on that platform.</p>
+
+<h2>Platform policies</h2>
+<p><b>YouTube.</b> Story Studio uses YouTube API Services. By using Story Studio, you agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in
+the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>. Story Studio's use and transfer to
+any other app of information received from Google APIs will adhere to the
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
 Policy</a>, including the Limited Use requirements.</p>
+<p><b>TikTok.</b> TikTok's handling of data on TikTok is described in the
+<a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.</p>
+<p><b>Instagram and Facebook.</b> Meta's handling of data on Instagram and Facebook is described in the
+<a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
 
-<h2>Disconnecting and deleting</h2>
-<p>I can disconnect any account inside Story Studio at any time. That deletes its tokens from the Keychain and
-asks the platform to revoke them. Access can also be removed from each platform's own settings: the
-<a href="https://myaccount.google.com/permissions">Google account permissions page</a>, the app permissions
-section of TikTok's settings, and the apps and business integrations sections of Instagram's and Facebook's
-settings.</p>
+<h2>Your rights</h2>
+<p>You can ask for a copy of the information Story Studio holds about you, or for it to be corrected or deleted,
+by emailing the address below. You can also complain to your data protection authority.</p>
+
+<h2>Security</h2>
+<p>Tokens are encrypted by the Keychain, every request to a platform uses HTTPS, and Story Studio's controls can
+only be reached from the computer it runs on. To report a security problem, email the address below.</p>
 
 <h2>Children</h2>
-<p>Story Studio is not directed at children. It is used by one adult, me.</p>
+<p>Story Studio is not directed at children.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the new version will appear on this page with a new date.</p>
+<p>If this policy changes, the new version appears on this page with a new date.</p>
 
 <h2>Contact</h2>
-<p>MoralDilemmaStories@hotmail.com</p>
+<p>Questions, complaints, deletion requests and security reports:
+<a href="mailto:MoralDilemmaStories@hotmail.com">MoralDilemmaStories@hotmail.com</a></p>
 
-<footer><a href="index.html">Back to Story Studio</a></footer>
+<footer><a href="index.html">Story Studio</a> · <a href="terms.html">Terms of service</a></footer>
 </body>
 </html>
